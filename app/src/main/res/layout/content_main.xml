@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.synergywebdesigners.nima.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:isScrollContainer="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:scrollbars="none"
+    android:background="@color/default_color"
+    android:paddingTop="10dp">
+<LinearLayout
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/nwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Let's Connect"
+        android:textAllCaps="true"
+        android:textColor="#fdc81a"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="#d92e08"
+        android:text="Network of indian mice agents"
+        android:textStyle="bold"
+        android:layout_below="@+id/nwelcome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp">
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:textAllCaps="true"
+            android:layout_weight="0"
+            android:textColor="#ffffff"
+            android:background="#d01714"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14dp"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LATEST NEWS"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/profile_text"
+            android:textColor="@color/default_color"
+            android:background="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/sliding_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:singleLine="true"
+                android:textSize="@dimen/mail"
+                android:onClick="news"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/news"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notice Board"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/profile_text"
+            android:textColor="@color/default_color"
+            android:background="@color/colorPrimary"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:clickable="true"
+            android:id="@+id/list_notice_board"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notice"
+        android:gravity="bottom"
+        android:foregroundGravity="bottom"
+        android:id="@+id/l2"
+        android:orientation="vertical"
+        android:layout_marginTop="0sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prefered Destination Partner"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:id="@+id/fp"
+            android:textStyle="bold"
+            android:textColor="#565656"
+            android:background="#eff0f1"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="2dp"
+            android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Prefered DMC Partner"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#565656"
+            android:background="#eff0f1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:id="@+id/img2"
+            android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:paddingLeft="2dp"
+            android:onClick="url"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prefered Hotel Partner"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#565656"
+            android:background="#eff0f1"
+            android:id="@+id/textView4"
+            android:layout_below="@id/img2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:id="@+id/img3"
+            android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:paddingLeft="2dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>

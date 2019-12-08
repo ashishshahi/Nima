@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/mail"
+        android:text="Information"
+        android:breakStrategy="balanced"
+        android:id="@+id/notice"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Day"
+        android:breakStrategy="balanced"
+        android:id="@+id/date"
+        android:textSize="11sp"
+        android:maxLength="10"
+        android:gravity="right"/>
+</LinearLayout>

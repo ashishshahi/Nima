@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.synergywebdesigners.nima.Register"
+    android:scrollbars="none"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!-- Registration Form -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <!-- Full Name TextView -->
+            <EditText android:id="@+id/m_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="Full Name" />
+            </android.support.design.widget.TextInputLayout>
+            <!--  Organistion TextView -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText android:id="@+id/m_org"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Organisation Name"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <!--  Trade TextView -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText android:id="@+id/m_trade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Trade"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Mobile Number TextView -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText android:id="@+id/m_mob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:phoneNumber="true"
+                android:hint="Mobile Number"
+                android:maxLength="10"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Official Mail TextView -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText android:id="@+id/m_ofmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Official Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Web site Address TextView-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText android:id="@+id/m_web"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Website"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <!-- Register Button -->
+            <Button android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Register New Account"
+                android:background="#002e5b"
+                android:textColor="#ffffff"/>
+            <!-- Link to Login Screen -->
+            <TextView android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="Already Has Account! Login Here"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#025f7c"/>
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>

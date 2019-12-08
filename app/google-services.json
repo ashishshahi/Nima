@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "692669958965",
+    "firebase_url": "https://nima-fafd8.firebaseio.com",
+    "project_id": "nima-fafd8",
+    "storage_bucket": "nima-fafd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692669958965:android:724f72d88074de3e",
+        "android_client_info": {
+          "package_name": "com.synergywebdesigners.nima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692669958965-nv8hkqcljlhaa51evphf3gjmnidct3kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBshl3IhJr-viDDARCROgwnZn4RGu_LWf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

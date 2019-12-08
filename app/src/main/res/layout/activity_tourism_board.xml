@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tourism_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="2dp"
+    android:background="#ffffff"
+    tools:context="com.synergywebdesigners.nima.TourismBoard">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="300dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="5dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/list_tourism"
+            android:scrollbars="none"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/s1"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:background="#0a99d6"/>
+    <ImageView android:id="@+id/imageDownloaded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"/>
+    </LinearLayout>
+</RelativeLayout>

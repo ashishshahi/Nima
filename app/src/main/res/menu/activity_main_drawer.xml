@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_menu_noticeboard"
+            android:title="NOTICE BOARD"/>
+        <item android:id="@+id/nav_event"
+            android:icon="@drawable/ic_menu_event"
+            android:title="EVENT" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_menu_news"
+            android:title="NEWS" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_menu_message"
+            android:title="CHAT" />
+        <item
+            android:id="@+id/nav_personal_chat"
+            android:icon="@drawable/ic_menu_personal_chat"
+            android:title="PERSONAL CHAT" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="PROFILE" />
+    </group>
+
+    <item android:title="Resources" >
+        <menu>
+            <item
+                android:id="@+id/nav_country"
+                android:icon="@drawable/ic_menu_country"
+                android:title="COUNTRY" />
+            <item
+                android:id="@+id/nav_Hotel"
+                android:icon="@drawable/ic_menu_hotel"
+                android:title="HOTEL" />
+            <item
+                android:id="@+id/nav_airline"
+                android:icon="@drawable/ic_menu_airline"
+                android:title="AIRLINE" />
+        </menu>
+    </item>
+
+</menu>
